@@ -6,10 +6,11 @@ import Footer from "@/components/Footer";
 
 import "./globals.css";
 
+
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Anime Vault",
+  title: "AnimeXplorer",
   description: "Your favorite anime, all in one place.",
 };
 
@@ -20,6 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <link rel="icon" href="/logo.svg" type="image/x-icon" sizes="256x256"/>
       <body className={dmSans.className}>
         <main className="max-w-7xl mx-auto bg-[#0F1117]">
           <Hero />
